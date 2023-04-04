@@ -26,6 +26,13 @@ Matriz2D t(Matriz2D& m){
 
 std::ostream& operator<<(std::ostream& os, const Matriz2D& m){
     // Sobrecarga del operador <<
+    for (int i = 0; i < m.filas; i++){
+        for (int j = 0; j < m.columnas; i++){
+            os << m.ptr[i][j];
+        }
+        os << endl;
+    }
+    return os;
 }
 
 Matriz2D operator+(const Matriz2D& m1, const Matriz2D& m2){
