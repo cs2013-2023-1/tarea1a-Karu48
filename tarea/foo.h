@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -18,6 +20,7 @@ public:
     Matriz2D(int, int);
     Matriz2D(const Matriz2D&);
     Matriz2D(Matriz2D&&);
+    ~Matriz2D();
 
     float get(int, int);
     int getFilas();
