@@ -63,7 +63,7 @@ Matriz2D::Matriz2D(const Matriz2D& m){
     }
 
     for (int i = 0; i < filas; i++){
-        for (int j = 0; j < columnas; i++){
+        for (int j = 0; j < columnas; j++){
             ptr[i][j] = m.ptr[i][j];
         }
     }
@@ -175,8 +175,8 @@ Matriz2D operator*(const Matriz2D& m, float n){
     // Sobrecarga del operador *
     Matriz2D m2 = m;
 
-    for (int i = 0; i < m.filas; i++){
-        for (int j = 0; j < m.columnas; j++){
+    for (int i = 0; i < m2.filas; i++){
+        for (int j = 0; j < m2.columnas; j++){
             m2.ptr[i][j] *= n;
         }
     }
